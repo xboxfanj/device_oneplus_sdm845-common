@@ -79,11 +79,11 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
 # Dex
 ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    WITH_DEXPREOPT ?= true
-  endif
+    ifneq ($(TARGET_BUILD_VARIANT),eng)
+      WITH_DEXPREOPT ?= true
+      WITH_DEXPREOPT_PIC := false
+    endif
 endif
-WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY ?= true
 
 # Display
 TARGET_USES_HWC2 := true
