@@ -1,0 +1,14 @@
+[
+  {
+    "remote":      "github",
+    "repository":  "Sirhc95/kernel_oneplus_sdm845",
+    "target_path": "kernel/oneplus/sdm845",
+	"revision":    "quartz"
+  },
+  {
+    "remote":      "github",
+    "repository":  "Sirhc95/proprietary_vendor_oneplus",
+    "target_path": "vendor/oneplus",
+	"revision":    "quartz"
+  }
+]
