@@ -173,3 +173,7 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-wfd.xml:system/etc/permissions/privapp-permissions-wfd.xml
+
+include vendor/qcom/common/av/qti-av.mk
+include vendor/qcom/common/bt/qti-bt.mk
+include vendor/qcom/common/perf/qti-perf.mk
