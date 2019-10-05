@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter enchilada fajita oneplus6t,$(TARGET_DEVICE)),)
+ifneq ($(filter enchilada fajita oneplus6t oneplus6,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
