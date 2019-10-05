@@ -181,8 +181,3 @@ PRODUCT_COPY_FILES += \
 include vendor/qcom/common/av/qti-av.mk
 include vendor/qcom/common/bt/qti-bt.mk
 include vendor/qcom/common/perf/qti-perf.mk
-
-PRODUCT_PACKAGES += libbluetooth_qti
-PRODUCT_PACKAGES += bt_logger
-PRODUCT_PACKAGES += libbt-logClient
-PRODUCT_PACKAGES += BluetoothExt
