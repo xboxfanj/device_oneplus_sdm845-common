@@ -137,3 +137,15 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
 # Inherit from the proprietary version
 -include vendor/oneplus/sdm845-common/BoardConfigVendor.mk
+
+#BT
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_QCOM := true
+TARGET_USE_QTI_BT_STACK := true
+
+#FM
+BOARD_HAVE_QCOM_FM := false
+
+TARGET_USE_QTI_BT_CONFIGSTORE := false
+TARGET_USE_QTI_BT_SAR := false
+TARGET_USE_QTI_VND_FWK_DETECT := false
