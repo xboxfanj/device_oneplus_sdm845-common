@@ -96,24 +96,6 @@ PRODUCT_PACKAGES += \
     libvulkan \
     vendor.display.config@1.0
 
-# Early phase offset configuration for SurfaceFlinger (b/75985430)
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.early_phase_offset_ns=500000
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.early_app_phase_offset_ns=500000
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.early_gl_phase_offset_ns=3000000
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.early_gl_app_phase_offset_ns=15000000
-
-# Graphics
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.vsync_event_phase_offset_ns=2000000
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
-
-# Enable backpressure for GL comp
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.enable_gl_backpressure=1
-
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:system/etc/permissions/privapp-permissions-hotword.xml
